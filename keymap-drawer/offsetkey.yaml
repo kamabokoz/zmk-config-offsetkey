@@ -3,19 +3,19 @@ layers:
   BASE:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
+  - {t: '2', s: '['}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
+  - {t: '6', s: '='}
+  - {t: '7', s: '6'}
+  - {t: '8', s: ''''}
+  - {t: '9', s: '8'}
+  - {t: '0', s: '9'}
+  - {t: '-', s: INT1}
   - _
   - {t: '$$mdi:backspace$$', type: backspace}
-  - PRINTSCREEN
+  - {t: 'Sft+[', s: '='}
   - '6'
   - $$mdi:keyboard-tab$$
   - Q
@@ -28,9 +28,9 @@ layers:
   - I
   - O
   - P
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
-  - INT YEN
+  - {t: ']', s: ']'}
+  - {t: \, s: \}
+  - {t: INT3, s: INT3}
   - $$mdi:backspace-reverse-outline$$
   - T
   - $$mdi:apple-keyboard-control$$
@@ -43,8 +43,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - '&'
+  - {t: ;, s: ''''}
+  - {t: Sft+7, s: '2'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PG UP
   - G
@@ -347,11 +347,3 @@ layers:
 combos:
 - p: [0, 11]
   k: $$mdi:progress-download$$
-- p: [2, 47]
-  k: '@'
-- p: [47, 6]
-  k: Sft+=
-- p: [47, 7]
-  k: Sft+6
-- p: [47, 8]
-  k: Sft+'

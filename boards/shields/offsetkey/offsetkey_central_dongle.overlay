@@ -44,3 +44,9 @@
 &trackball_listener {
     status = "okay";
 };
+
+/* Override OLED to 128x64 for dongle */
+&oled {
+    height = <64>;
+    multiplex-ratio = <63>;
+};

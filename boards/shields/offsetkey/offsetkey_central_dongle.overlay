@@ -15,13 +15,14 @@
     chosen {
         zmk,underglow = &led_strip;
         zmk,kscan = &mock_kscan;
+        zmk,matrix-transform = &default_transform;
         zephyr,display = &oled;
     };
 
     mock_kscan: kscan_0 {
         compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
+        columns = <19>;
+        rows = <6>;
         events = <0>;
     };
 };

@@ -87,7 +87,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   '1':
-  - {t: '`', s: '~'}
+  - LANG2
   - F1
   - F2
   - F3

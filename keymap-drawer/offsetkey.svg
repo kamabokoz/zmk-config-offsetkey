@@ -348,8 +348,8 @@ rect.held, rect.combo.held {
 <g transform="translate(1176, 28)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">=</text>
-<text x="0" y="-24" class="key shifted">+</text>
+<text x="0" y="-4" class="key tap">-</text>
+<text x="0" y="-24" class="key shifted">_</text>
 </g>
 <g transform="translate(1260, 28)" class="key backspace keypos-13">
 <rect rx="6" ry="6" x="-54" y="-26" width="108" height="52" class="key backspace side"/>
@@ -424,14 +424,14 @@ rect.held, rect.combo.held {
 <g transform="translate(1148, 84)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">[</text>
-<text x="0" y="-24" class="key shifted">{</text>
+<text x="0" y="-4" class="key tap">]</text>
+<text x="0" y="-24" class="key shifted">}</text>
 </g>
 <g transform="translate(1204, 84)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">]</text>
-<text x="0" y="-24" class="key shifted">}</text>
+<text x="0" y="-4" class="key tap">\</text>
+<text x="0" y="-24" class="key shifted">|</text>
 </g>
 <g transform="translate(1274, 84)" class="key keypos-29">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key side"/>
@@ -510,7 +510,7 @@ rect.held, rect.combo.held {
 <g transform="translate(1162, 140)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">.</text>
+<text x="0" y="-4" class="key tap">&amp;</text>
 </g>
 <g transform="translate(1253, 140)" class="key enter keypos-44">
 <rect rx="6" ry="6" x="-61" y="-26" width="122" height="52" class="key enter side"/>
@@ -746,6 +746,12 @@ rect.held, rect.combo.held {
 <path d="M480,112 l398,-80" class="combo"/>
 <rect rx="6" ry="6" x="466" y="99" width="28" height="26" class="combo"/>
 <text x="480" y="112" class="combo tap">Sft+6</text>
+</g>
+<g class="combo combopos-4">
+<path d="M508,112 l-403,76" class="combo"/>
+<path d="M508,112 l426,-81" class="combo"/>
+<rect rx="6" ry="6" x="494" y="99" width="28" height="26" class="combo"/>
+<text x="508" y="112" class="combo tap">Sft+&#x27;</text>
 </g>
 </g>
 </g>
@@ -1202,6 +1208,12 @@ rect.held, rect.combo.held {
 <path d="M480,112 l398,-80" class="combo"/>
 <rect rx="6" ry="6" x="466" y="99" width="28" height="26" class="combo"/>
 <text x="480" y="112" class="combo tap">Sft+6</text>
+</g>
+<g class="combo combopos-4">
+<path d="M508,112 l-403,76" class="combo"/>
+<path d="M508,112 l426,-81" class="combo"/>
+<rect rx="6" ry="6" x="494" y="99" width="28" height="26" class="combo"/>
+<text x="508" y="112" class="combo tap">Sft+&#x27;</text>
 </g>
 </g>
 </g>
@@ -1675,6 +1687,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="466" y="99" width="28" height="26" class="combo"/>
 <text x="480" y="112" class="combo tap">Sft+6</text>
 </g>
+<g class="combo combopos-4">
+<path d="M508,112 l-403,76" class="combo"/>
+<path d="M508,112 l426,-81" class="combo"/>
+<rect rx="6" ry="6" x="494" y="99" width="28" height="26" class="combo"/>
+<text x="508" y="112" class="combo tap">Sft+&#x27;</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1008)" class="layer-3">
@@ -2127,6 +2145,12 @@ rect.held, rect.combo.held {
 <path d="M480,112 l398,-80" class="combo"/>
 <rect rx="6" ry="6" x="466" y="99" width="28" height="26" class="combo"/>
 <text x="480" y="112" class="combo tap">Sft+6</text>
+</g>
+<g class="combo combopos-4">
+<path d="M508,112 l-403,76" class="combo"/>
+<path d="M508,112 l426,-81" class="combo"/>
+<rect rx="6" ry="6" x="494" y="99" width="28" height="26" class="combo"/>
+<text x="508" y="112" class="combo tap">Sft+&#x27;</text>
 </g>
 </g>
 </g>

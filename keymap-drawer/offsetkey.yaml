@@ -13,7 +13,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - {t: '=', s: +}
+  - {t: '-', s: _}
   - {t: '$$mdi:backspace$$', type: backspace}
   - F5
   - '6'
@@ -28,8 +28,8 @@ layers:
   - I
   - O
   - P
-  - {t: '[', s: '{'}
   - {t: ']', s: '}'}
+  - {t: \, s: '|'}
   - {t: \, s: '|'}
   - RGB ON
   - T
@@ -44,7 +44,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - .
+  - '&'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - RGB OFF
   - G
@@ -353,3 +353,5 @@ combos:
   k: Sft+=
 - p: [47, 7]
   k: Sft+6
+- p: [47, 8]
+  k: Sft+'

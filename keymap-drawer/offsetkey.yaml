@@ -13,7 +13,7 @@ layers:
   - {t: '9', s: '8'}
   - {t: '0', s: '9'}
   - {t: '-', s: INT1}
-  - _
+  - {t: Sft+-, s: ;}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: 'Sft+[', s: '='}
   - '6'

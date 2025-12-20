@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2020 ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/led/led.h>
+#include "offsetkey.dtsi"
+#include "split_input_common.dtsi"
+#define SYMBOLS 2
+#include "rgb.dtsi"
+
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+        zmk,kscan = &mock_kscan;
+        zephyr,display = &oled;
+    };
+
+    mock_kscan: kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+&pinctrl {
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>; // WS2812_VEXT_DATA
+        };
+    };
+
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 22)>;
+            low-power-enable;
+        };
+    };
+};
+
+&trackball_listener {
+    status = "okay";
+};

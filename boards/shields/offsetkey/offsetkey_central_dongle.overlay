@@ -19,7 +19,7 @@
         zephyr,display = &oled;
     };
 
-    mock_kscan: kscan_0 {
+    mock_kscan: mock_kscan {
         compatible = "zmk,kscan-mock";
         columns = <19>;
         rows = <6>;

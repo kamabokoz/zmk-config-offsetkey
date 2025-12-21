@@ -40,11 +40,6 @@
         rows = <6>;
         events = <0>;
     };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder>;
-    };
 };
 
 /* nice!nano I2C pins for OLED */

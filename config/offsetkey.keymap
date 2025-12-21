@@ -230,12 +230,12 @@
 
         layer_1 {
             bindings = <
-&kp LANG2     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp F7  &kp F8        &kp F9        &kp F10       &kp F11          &kp F12  &trans  &kp HOME             &kp F6
-&trans        &trans  &trans  &trans  &trans  &trans              &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PRINTSCREEN  &trans   &trans  &trans      &kp END  &trans
-&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans              &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans   &trans  &kp INSERT           &trans
-&trans        &trans  &trans  &trans  &trans  &trans              &none   &none         &trans        &trans        &trans           &trans   &trans  &trans               &trans
-&trans        &trans  &trans  &trans          &trans                      &trans        &trans        &trans        &trans           &trans   &trans  &trans               &trans
-&trans        &trans  &trans  &trans  &trans  &trans              &trans  &trans        &trans        &trans
+&kp LANG2     &kp F1  &kp F2  &kp F3  &kp F4     &kp F5  &kp F6      &kp F7  &kp F8        &kp F9        &kp F10       &kp F11          &kp F12  &trans  &kp HOME             &kp F6
+&trans        &trans  &trans  &trans  &trans     &trans              &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PRINTSCREEN  &trans   &trans  &trans      &kp END  &trans
+&kp CAPSLOCK  &trans  &trans  &trans  &mkp RCLK  &trans              &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans   &trans  &kp INSERT           &trans
+&trans        &trans  &trans  &trans  &trans     &trans              &none   &none         &trans        &trans        &trans           &trans   &trans  &trans               &trans
+&mkp LCLK     &trans  &trans  &trans             &trans                      &trans        &trans        &trans        &trans           &trans   &trans  &trans               &trans
+&trans        &trans  &trans  &trans  &trans     &trans              &trans  &trans        &trans        &trans
             >;
         };
 

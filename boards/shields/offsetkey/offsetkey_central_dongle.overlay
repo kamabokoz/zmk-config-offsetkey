@@ -4,7 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
 #include "offsetkey_physical_layout.dtsi"
+#include "split_input_common.dtsi"
+
+#define SYMBOLS 2
 
 / {
     chosen {
@@ -73,6 +78,12 @@
         multiplex-ratio = <63>;
         segment-remap;
         com-invdir;
+        inversion-on;
         prechargep = <0x22>;
     };
+};
+
+/* Enable trackball listener for input from peripheral */
+&trackball_listener {
+    status = "okay";
 };

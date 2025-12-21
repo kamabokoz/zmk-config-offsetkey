@@ -216,7 +216,7 @@
 
         BASE {
             bindings = <
-&kp ESC       &kp N1          &jis_N2          &kp N3          &kp N4     &kp N5     &jis_N6      &jis_N7    &jis_N8    &jis_N9        &jis_N0  &jis_MINUS  &jis_EQUAL  &kp BSPC      &jis_GRAVE
+&kp ESC       &kp N1          &jis_N2          &kp N3          &kp N4     &kp N5     &jis_N6      &jis_N7    &jis_N8    &jis_N9        &jis_N0  &jis_MINUS  &jis_EQUAL  &kp BSPC      &jis_GRAVE              &kp NUMBER_6
 &kp TAB       &kp Q           &kp W            &kp E           &kp R      &kp T                   &kp Y      &kp U      &kp I          &kp O    &kp P       &jis_LBKT   &jis_RBKT     &jis_BSLH   &kp DELETE  &kp T
 &kp LCTRL     &kp A           &kp S            &kp D           &kp F      &kp G                   &kp H      &kp J      &kp K          &kp L    &jis_SEMI   &jis_SQT    &kp ENTER     &kp PG_UP               &kp G
 &kp LSHFT     &kp Z           &kp X            &kp C           &kp V      &kp B                   &kp N      &kp M      &kp COMMA      &kp DOT  &kp FSLH    &kp RSHFT   &kp UP_ARROW  &kp PG_DN               &kp B

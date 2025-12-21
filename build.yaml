@@ -4,7 +4,7 @@ include:
   - board: eyelash_nano
     shield: offsetkey_peripheral_right
   - board: nice_nano_v2
-    shield: offsetkey_central_dongle dongle_display
+    shield: offsetkey_central_dongle
     artifact-name: offsetkey_dongle
   - board: eyelash_nano
     shield: settings_reset

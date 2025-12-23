@@ -238,6 +238,7 @@
 &trans        &trans  &trans  &trans  &trans     &trans              &trans  &trans        &trans        &trans
             >;
 
+            label = "LOWER";
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
@@ -251,6 +252,7 @@
 &trans     &trans  &trans  &trans  &trans  &trans              &trans           &trans          &trans           &trans
             >;
 
+            label = "MOUSE";
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
@@ -264,6 +266,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans
             >;
 
+            label = "EXTRA";
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
     };

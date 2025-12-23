@@ -237,6 +237,8 @@
 &mkp LCLK     &trans  &trans  &trans             &trans                      &trans        &trans        &trans        &trans           &trans   &trans  &trans               &trans
 &trans        &trans  &trans  &trans  &trans     &trans              &trans  &trans        &trans        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_2 {
@@ -248,6 +250,8 @@
 &trans     &trans  &trans  &trans          &trans                               &trans          &trans           &trans           &trans           &trans   &bt BT_CLR_ALL  &bt BT_CLR           &trans
 &trans     &trans  &trans  &trans  &trans  &trans              &trans           &trans          &trans           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_3 {
@@ -259,6 +263,8 @@
 &trans  &trans  &trans  &trans          &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
     };
 };

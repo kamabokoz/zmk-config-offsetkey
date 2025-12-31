@@ -36,19 +36,26 @@
     };
 
     macros {
-        arrow_left_3x: arrow_left_3x {
+        left_3x: left_3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT>;
-            label = "ARROW_LEFT_3X";
+            label = "LEFT_3X";
         };
 
-        arrow_right_3x: arrow_right_3x {
+        right_3x: right_3x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT &kp RIGHT &kp RIGHT>;
-            label = "ARROW_RIGHT_3X";
+            label = "RIGHT_3X";
         };
+    };
+
+    encoder_3x: encoder_3x {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&left_3x>, <&right_3x>;
+        label = "ENCODER_3X";
     };
 
     //--------USキーボードの記号を日本語OSで表示通りに入力するための処理-----------------------------
@@ -254,7 +261,7 @@
             >;
 
             label = "AUTO_MOUSE";
-            sensor-bindings = <&arrow_left_3x &arrow_right_3x>;
+            sensor-bindings = <&encoder_3x>;
         };
 
         layer_2 {

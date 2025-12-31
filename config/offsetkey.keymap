@@ -7,10 +7,10 @@
 #include <behaviors/toggle_io.dtsi>
 #include <behaviors/on_io.dtsi>
 #include <behaviors/off_io.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -230,12 +230,12 @@
 
         layer_1 {
             bindings = <
-&trans          &trans     &trans     &trans           &trans     &trans  &trans      &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&trans          &trans     &trans     &trans                      &trans                         &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&msc MOVE_Y(-10)    &msc MOVE_X(-10)  &msc MOVE_X(10)  &msc MOVE_Y(10)  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+&trans            &trans            &trans           &trans           &trans     &trans     &trans      &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
+&trans            &trans            &trans           &trans           &trans     &trans                 &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans            &trans           &trans           &trans     &trans                 &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
+&trans            &trans            &trans           &trans           &trans     &trans                 &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
+&trans            &trans            &trans           &trans                      &trans                            &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
+&msc MOVE_Y(-10)  &msc MOVE_X(-10)  &msc MOVE_X(10)  &msc MOVE_Y(10)  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
 
             label = "AUTO_MOUSE";
@@ -244,12 +244,12 @@
 
         layer_2 {
             bindings = <
-&kp LANG2     &kp F1  &kp F2  &kp F3  &kp F4     &kp F5  &kp F6      &kp F7  &kp F8        &kp F9        &kp F10       &kp F11          &kp F12  &trans  &kp HOME             &kp F6
-&trans        &trans  &trans  &trans  &trans     &trans              &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PRINTSCREEN  &trans   &trans  &trans      &kp END  &trans
-&kp CAPSLOCK  &trans  &trans  &trans  &mkp RCLK  &trans              &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans   &trans  &kp INSERT           &trans
-&trans        &trans  &trans  &trans  &trans     &trans              &none   &none         &trans        &trans        &trans           &trans   &trans  &trans               &trans
-&mkp LCLK     &trans  &trans  &trans             &trans                      &trans        &trans        &trans        &trans           &trans   &trans  &trans               &trans
-&trans        &trans  &trans  &trans  &trans     &trans              &trans  &trans        &trans        &trans
+&kp LANG_ZENKAKUHANKAKU  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5  &kp F6      &kp F7  &kp F8        &kp F9        &kp F10       &kp F11          &kp F12  &trans  &kp HOME             &kp F6
+&trans                   &trans  &trans  &trans  &trans     &trans              &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PRINTSCREEN  &trans   &trans  &trans      &kp END  &trans
+&kp CAPSLOCK             &trans  &trans  &trans  &mkp RCLK  &trans              &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans   &trans  &kp INSERT           &trans
+&trans                   &trans  &trans  &trans  &trans     &trans              &none   &none         &trans        &trans        &trans           &trans   &trans  &trans               &trans
+&mkp LCLK                &trans  &trans  &trans             &trans                      &trans        &trans        &trans        &trans           &trans   &trans  &trans               &trans
+&trans                   &trans  &trans  &trans  &trans     &trans              &trans  &trans        &trans        &trans
             >;
 
             label = "LOWER";

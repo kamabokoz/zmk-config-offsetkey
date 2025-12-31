@@ -35,6 +35,22 @@
         };
     };
 
+    macros {
+        arrow_left_3x: arrow_left_3x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT &kp LEFT &kp LEFT>;
+            label = "ARROW_LEFT_3X";
+        };
+
+        arrow_right_3x: arrow_right_3x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp RIGHT &kp RIGHT>;
+            label = "ARROW_RIGHT_3X";
+        };
+    };
+
     //--------USキーボードの記号を日本語OSで表示通りに入力するための処理-----------------------------
     //`~マーク
 
@@ -234,11 +250,11 @@
 &trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
 &trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
 &trans          &trans     &trans     &trans                      &trans                         &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&msc SCRL_UP    &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+&msc MOVE_UP(10)    &msc MOVE_LEFT(10)  &msc MOVE_RIGHT(10)  &msc MOVE_DOWN(10)  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
 
             label = "AUTO_MOUSE";
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&arrow_left_3x &arrow_right_3x>;
         };
 
         layer_2 {

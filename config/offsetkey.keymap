@@ -234,11 +234,11 @@
 &trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
 &trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
 &trans          &trans     &trans     &trans                      &trans                         &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&msc SCRL_LEFT  &mkp LCLK  &mkp RCLK  &msc SCRL_RIGHT  &mkp MCLK  &trans              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+&msc SCRL_UP    &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
 
             label = "AUTO_MOUSE";
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_msc SCRL_LEFT SCRL_RIGHT>;
         };
 
         layer_2 {

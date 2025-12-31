@@ -1,8 +1,7 @@
 #define BASE 0
-#define LOWER 1
-#define MOUSE_KEYS 2
-#define AUTO_MOUSE 3
-#define MOUSE_TP_SET 4
+#define AUTO_MOUSE 1
+#define LOWER 2
+#define SYS 3
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/toggle_io.dtsi>

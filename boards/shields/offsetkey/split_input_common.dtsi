@@ -2,9 +2,8 @@
 #include <input/processors.dtsi>
 
 #define DEFAULT 0
-#define WIN 1
+#define AUTO_MOUSE 1
 #define SYMBOLS 2
-#define AUTO_MOUSE 3
 #define NAV 4
 #define FUNCTION 5
 #define BLUETOOTH 6

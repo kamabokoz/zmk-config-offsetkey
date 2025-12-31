@@ -235,7 +235,7 @@
 &trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
 &trans          &trans     &trans     &trans           &trans     &trans              &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
 &trans          &trans     &trans     &trans                      &trans                         &trans     &trans     &trans     &trans  &trans  &trans  &trans          &trans
-&msc SCRL_UP    &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+&msc MOVE_Y(-10)    &msc MOVE_X(-10)  &msc MOVE_X(10)  &msc MOVE_Y(10)  &mkp LCLK  &mkp RCLK              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
 
             label = "AUTO_MOUSE";

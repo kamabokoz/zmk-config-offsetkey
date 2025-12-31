@@ -1,7 +1,7 @@
 #define BASE 0
 #define LOWER 1
 #define MOUSE_KEYS 2
-#define MOUSE_TP 3
+#define AUTO_MOUSE 3
 #define MOUSE_TP_SET 4
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -258,15 +258,15 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans          &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans          &trans                         &trans     &trans     &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &mkp LCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
 
-            label = "EXTRA";
+            label = "AUTO_MOUSE";
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
     };

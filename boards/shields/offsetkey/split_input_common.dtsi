@@ -4,7 +4,7 @@
 #define DEFAULT 0
 #define WIN 1
 #define SYMBOLS 2
-#define NUMBERS 18
+#define AUTO_MOUSE 3
 #define NAV 4
 #define FUNCTION 5
 #define BLUETOOTH 6
@@ -33,6 +33,12 @@
     status = "disabled";
     device = <&trackball_split>;
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_XY_SWAP )>;
+
+    /* Auto Mouse Layer Settings */
+    layer-toggle = <AUTO_MOUSE>;
+    layer-toggle-delay-ms = <0>;
+    layer-toggle-timeout-ms = <1000>;
+
     scroll {
       layers = <SYMBOLS>;
       input-processors = <&zip_xy_transform ( INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_XY_SWAP)>, <&zip_xy_scaler 1 10>, <&zip_xy_to_scroll_mapper>;
